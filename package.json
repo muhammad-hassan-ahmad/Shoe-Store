@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node api.js && vite",
     "build": "vite build",
     "watch": "vite build --watch --mode development",
     "serve": "php artisan serve",
-    "dev-full": "concurrently \"npm run watch\" \"npm run serve\""
+    "dev-full": "node api.js && concurrently \"npm run watch\" \"npm run serve\""
   },
   "dependencies": {
     "axios": "^1.7.3",
